@@ -1,0 +1,98 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.heiya.game2048.MainActivity" >
+    
+    
+    <LinearLayout 
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:orientation="horizontal">
+        <TextView 
+            android:text="@string/score"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+        
+        <TextView 
+            android:id="@+id/ShowScore"
+            android:text="@string/zero"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+        
+        <TextView 
+            android:text="@string/MostScore"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+        
+        <TextView 
+            android:id="@+id/getMostScore"
+            android:text="@string/zero"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+    </LinearLayout>
+    
+    <FrameLayout 
+        android:id="@+id/gameContainer"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        
+        <com.heiya.game2048.GameView
+        	android:id="@+id/gameView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+    	</com.heiya.game2048.GameView>
+        
+		<com.heiya.game2048.AnimationLayer 
+		     android:id="@+id/AnimLayer"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+	    
+		</com.heiya.game2048.AnimationLayer>
+		
+    </FrameLayout>
+    
+    <LinearLayout 
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:orientation="horizontal">
+		<Button 
+		    android:id="@+id/reStart"
+		    android:text="@string/restart"
+		    android:layout_width="fill_parent"
+		    android:layout_height="match_parent"/>
+    </LinearLayout>
+    
+    
+    <LinearLayout 
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:orientation="horizontal">
+    	<TextView 
+	        android:layout_weight="1"
+        	android:text="@string/zhouchaoyuan"
+        	android:layout_height="wrap_content"
+        	android:layout_width="wrap_content"
+        	android:textAppearance="?android:attr/textAppearanceLarge" />
+    
+	    <TextView 
+    	    android:layout_weight="1"
+	        android:text="@string/acjiji"
+        	android:layout_height="wrap_content"
+        	android:layout_width="wrap_content"
+        	android:textAppearance="?android:attr/textAppearanceLarge" />
+    </LinearLayout>
+
+    
+
+</LinearLayout>

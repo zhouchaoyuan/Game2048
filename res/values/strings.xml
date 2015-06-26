@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">2048</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="score">得分: </string>
+    <string name="zero"> 0</string>
+    <string name="zhouchaoyuan">周朝苑版2048</string>
+    <string name="MostScore">最高分: </string>
+    <string name="acjiji">作者：Acjiji</string>
+    <string name="restart">重新开始</string>
+
+</resources>
